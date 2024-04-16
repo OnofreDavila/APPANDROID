@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgHead"
+        android:layout_width="264dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img1appandroid"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/imgCazuela"
+        android:layout_width="171dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/labelCazuela"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPastelChoclo"
+        app:srcCompat="@drawable/img3appandroid"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/imgPastelChoclo"
+        android:layout_width="171dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/tituloPastelChoclo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgHead"
+        app:srcCompat="@drawable/img2appandroid"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/tituloPastelChoclo"
+        android:layout_width="142dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/pastel_de_choclo"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgPastelChoclo"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/labelCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/cant"
+        app:layout_constraintBottom_toTopOf="@+id/cantidadTotalChoclo"
+        app:layout_constraintStart_toStartOf="@+id/tituloPastelChoclo" />
+
+    <TextView
+        android:id="@+id/labelTotalComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/comida"
+        app:layout_constraintEnd_toEndOf="@+id/imgCazuela"
+        app:layout_constraintTop_toBottomOf="@+id/imgCazuela" />
+
+    <TextView
+        android:id="@+id/labelPropina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/propina"
+        app:layout_constraintEnd_toEndOf="@+id/labelTotalComida"
+        app:layout_constraintTop_toBottomOf="@+id/labelTotalComida" />
+
+    <TextView
+        android:id="@+id/labelTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/total"
+        app:layout_constraintEnd_toEndOf="@+id/labelPropina"
+        app:layout_constraintTop_toBottomOf="@+id/labelPropina" />
+
+    <TextView
+        android:id="@+id/tituloCazuela"
+        android:layout_width="142dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/cazuela"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgCazuela"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/resultadoComida"
+        android:layout_width="125dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textColorHint="#8D6E63"
+        app:layout_constraintStart_toEndOf="@+id/labelTotalComida"
+        app:layout_constraintTop_toTopOf="@+id/labelTotalComida" />
+
+    <TextView
+        android:id="@+id/resultadoTotal"
+        android:layout_width="98dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:text=""
+        android:textColorHint="#8D6E63"
+        app:layout_constraintStart_toEndOf="@+id/labelTotal"
+        app:layout_constraintTop_toTopOf="@+id/labelTotal" />
+
+    <Switch
+        android:id="@+id/switchPropina"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="64dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/labelPropina"
+        app:layout_constraintEnd_toStartOf="@+id/labelPropina" />
+
+    <TextView
+        android:id="@+id/labelCazuela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Cant."
+        app:layout_constraintBottom_toTopOf="@+id/cantidadTotalCazuela"
+        app:layout_constraintStart_toStartOf="@+id/tituloCazuela" />
+
+    <EditText
+        android:id="@+id/cantidadChoclo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="3"
+        android:hint="@string/cantidadchoclo"
+        android:inputType="number"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toTopOf="@+id/cantidadTotalChoclo"
+        app:layout_constraintStart_toEndOf="@+id/labelCantidad"
+        app:layout_constraintTop_toBottomOf="@+id/tituloPastelChoclo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/cantidadCazuela"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:ems="3"
+        android:hint="@string/cantidadcuzuela"
+        android:inputType="number"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toTopOf="@+id/cantidadTotalCazuela"
+        app:layout_constraintStart_toEndOf="@+id/labelCazuela"
+        app:layout_constraintTop_toBottomOf="@+id/tituloCazuela" />
+
+    <TextView
+        android:id="@+id/resultadoPropina"
+        android:layout_width="101dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        app:layout_constraintStart_toEndOf="@+id/labelPropina"
+        app:layout_constraintTop_toTopOf="@+id/labelPropina" />
+
+    <TextView
+        android:id="@+id/cantidadTotalChoclo"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="@+id/imgPastelChoclo"
+        app:layout_constraintStart_toStartOf="@+id/labelCantidad" />
+
+    <TextView
+        android:id="@+id/cantidadTotalCazuela"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/cantidadtotalcazuela"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCazuela"
+        app:layout_constraintStart_toStartOf="@+id/labelCazuela" />
+
+    <Button
+        android:id="@+id/btnprueba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/prueba"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

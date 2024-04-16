@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">my First App</string>
+    <string name="cantidadtotalcazuela">cantidadTotalCazuela</string>
+    <string name="prueba">prueba</string>
+    <string name="cantidadcuzuela">cantidadCuzuela</string>
+    <string name="cantidadchoclo">cantidadChoclo</string>
+    <string name="todo">TODO</string>
+    <string name="cant">Cant.</string>
+    <string name="comida">Comida</string>
+    <string name="resultadocomida">resultadoComida</string>
+    <string name="resultadototal">resultadoTotal</string>
+    <string name="cazuela">Cazuela</string>
+    <string name="pastel_de_choclo">Pastel de Choclo</string>
+    <string name="total">TOTAL</string>
+    <string name="propina">Propina</string>
+</resources>
